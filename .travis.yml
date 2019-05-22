@@ -6,4 +6,4 @@ before_install:
   - docker build -t brian880120/web -f Dockerfile.dev .
 
 script:
-  - docker run brian880120/web npm test -- --coverage
+  - docker run brian880120/web npm run test -- --coverage

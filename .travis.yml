@@ -15,3 +15,5 @@ deploy:
   env: "Web-env"
   bucket_name: "elasticbeanstalk-us-east-2-146208315728"
   bucket_path: "web"
+  on:
+    branch: master

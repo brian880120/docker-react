@@ -7,3 +7,11 @@ before_install:
 
 script:
   - docker run brian880120/web npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "web"
+  env: "Web-env"
+  bucket_name: "elasticbeanstalk-us-east-2-146208315728"
+  bucket_path: "web"
